@@ -34,7 +34,7 @@ new_msg = bot.getUpdates()[-1].message.text
 # print(new_msg)
 
 
-# bot.sendMessage(chat_id=chat_id,text='4D영화는 1번, IMAX는 2번을 입력해주세요!!*^^*')
+bot.sendMessage(chat_id=chat_id,text='4D영화는 1번, IMAX는 2번을 입력해주세요!!*^^*')
 
 def job_fungtion():
     html = requests.get(url)
@@ -80,13 +80,6 @@ def job_fungtion():
 # #
 # updater.start_polling(timeout=3, clean=True)
 # updater.idle()
-
-# for u in updates:
-#     if(new_msg == '1'):
-#         job_fungtion()
-#     else :
-#         bot.sendMessage(chat_id = chat_id, text="저는 봇입니다.무엇을 도와드릴까요? 1.4D 2.IMAX")
-
 
 
 
